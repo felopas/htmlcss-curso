@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'pizza';
+    src: url(fontes/idroid.otf);
+}
+
+@font-face {
+    font-family: 'mac';
+    src: url(__MACOSX/fontes/);
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1AD;
+    --cor2: #3ddc84;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+    --fonte0: Arial, Helvetica, sans-serif;
+    --fonte1: 'mac', cursive;
+    --fonte2: 'pizza', sans-serif;
+}
+
+video {
+    padding: 20px 28px;
+    background-color: #063d1e;
+    width: 840px;
+}
+
+a {
+
+    background-color: #83e1AD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+
+    background: var(--cor0);
+    color: var(var(--cor0));
+    background-color: var(--cor1);
+}
+
+header {
+    text-align: center;
+    border: 0%;
+    padding: 0%;
+    background-image: linear-gradient(to top, var(--cor2), var(--cor4));
+}
+
+
+h1 {
+    font-family: var(--fonte1);
+    color: white;
+
+}
+
+h2 {
+    font-family: var(--fonte2);
+    text-align: left;
+    color: var(--cor4);
+}
+
+h3 {
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), white);
+}
+
+p {
+    padding: 10px;
+    font-family: var(--fonte0);
+
+}
+
+#menu:hover>p {
+    display: block;
+    background-color: var(--cor3);
+    color: white;
+    width: fit-content;
+}
+
+#img {
+    text-align: center;
+}
+
+#menu {
+    height: 100px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    color: white;
+}
+
+#corpo {
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    width: 900px;
+    background-color: white;
+    text-align: justify;
+}
+
+#sabermais {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+
+
+}
+
+#lista {
+    font-size: medium;
+    font-family: var(--fonte0);
+    display: flex;
+    list-style: none;
+    gap: 300px;
+}
+
+#minititulo {
+
+    font-family: var(--fonte0);
+    height: 30px;
+    border: 0px;
+    background-color: var(--cor5);
+    border-radius: 10px 10px 0px 0px;
+    padding: 2px;
+}
+
+#barra {
+    color: white;
+}
+
+#lista ul {
+    list-style: none;
+}
+
+#imgrobo {
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 300px;
+    background-image: url("imagens/dan-droids.png");
+}
+
+@media (max-width: 1000px) {
+    #imgrobo {
+        height: 500px;
+        background-image: url("imagens/dan-droids-pq.png");
+    }
+}

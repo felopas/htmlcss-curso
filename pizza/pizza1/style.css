@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body{
+    background-image: linear-gradient(to left, #B42BFC, #DC1C9A);
+    font: bolder 1.5em arial, sans-serif;
+    width: 1200px;
+    margin: auto;
+ 
+}
+main{
+    background-color: white;
+    border-radius: 5%;
+    padding: 10px;
+    
+}
+h1{
+    text-align: center;
+    color: #F92BFC;
+}
+h2{
+    color: #E125FF;
+}
+
